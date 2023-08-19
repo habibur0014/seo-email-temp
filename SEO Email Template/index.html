@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>SEO Email Template</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+	<script src="https://kit.fontawesome.com/e441849125.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+}
+/* iPhone 6+, 7+, and 8+ */
+@media only screen and (min-device-width: 414px) {
+    u ~ div .email-container {
+        min-width: 414px !important;
+    }
+}
+
+    </style>
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+
+	    .primary{
+	background: #ff8b00;
+}
+.bg_white{
+	background: #ffffff;
+	
+}
+.bg_light{
+	background: #fafafa;
+}
+
+.bg_black{
+	background: #000000;
+}
+.bg_dark{
+	background: rgba(0,0,0,.8);
+}
+.email-section{
+	padding:2.5em;
+}
+
+/*BUTTON*/
+.btn{
+	padding: 5px 20px;
+	display: inline-block;
+}
+
+.btn.btn-primary{
+	border-radius: 5px;
+	background: #ff8b00;
+	color: #ffffff;
+}
+.btn.btn-primary:hover{
+	background: #061a43;
+	border: none;
+}
+.btn.btn-white{
+	border-radius: 5px;
+	background: #ffffff;
+	color: #000000;
+}
+.btn.btn-white-outline{
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.btn.btn-black{
+	border-radius: 0px;
+	background: #000;
+	color: #fff;
+}
+.btn.btn-black-outline{
+	border-radius: 0px;
+	background: transparent;
+	border: 2px solid #000;
+	color: #000;
+	font-weight: 700;
+}
+.btn.btn-custom{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Work Sans', sans-serif;
+	color: #000000;
+	margin-top: 0;
+	font-weight: 400;
+}
+
+body{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.8;
+	color: rgba(0,0,0,.5);
+}
+
+a{
+	color: #ff8b00;
+}
+
+p{
+	margin-top: 0;
+}
+
+table{
+}
+/*LOGO*/
+
+.logo h1{
+	margin: 0;
+}
+.logo h1 a{
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	/*text-transform: uppercase;*/
+	font-family: 'Work Sans', sans-serif;
+}
+
+.navigation{
+	padding: 0;
+	padding: 1em 0;
+	/*background: rgba(0,0,0,1);*/
+	border-top: 1px solid rgba(0,0,0,.05);
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	margin-bottom: 0;
+}
+.navigation li{
+	list-style: none;
+	display: inline-block;;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.navigation li a{
+	color: rgba(0,0,0,1);
+}
+
+/*HERO*/
+.hero{
+	background: linear-gradient(#071952,#0B666A, #35A29F);
+	
+	position: relative;
+	z-index: 0;
+}
+.hero .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .2;
+}
+.hero .text{
+	color: rgba(255,255,255,.9);
+	max-width: 50%;
+	margin: 0 auto 0;
+}
+.hero .text h2{
+	color: #fff;
+	font-size: 35px;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.4;
+}
+.hero .text h2 span{
+	font-weight: 600;
+	color: #ff8b00;
+}
+
+/*INTRO*/
+.intro{
+	position: relative;
+	z-index: 0;
+}
+
+.intro .text{
+	color: rgba(0,0,0,.3);
+}
+.intro .text h2{
+	color: #000;
+	font-size: 34px;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+.intro .text h2 span{
+	font-weight: 600;
+	color: #ff8b00;
+}
+
+/*SERVICES*/
+.services{
+}
+.text-services{
+	padding: 10px 10px 0; 
+	text-align: center;
+}
+.text-services h3{
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.services-list{
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+
+.services-list img{
+	float: left;
+}
+.services-list h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.services-list p{
+	margin: 0;
+}
+
+
+
+/*COUNTER*/
+.counter{
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+.counter .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .3;
+}
+.counter-text{
+	text-align: center;
+}
+.counter-text .num{
+	display: block;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+}
+.counter-text .name{
+	display: block;
+	color: rgba(255,255,255,.9);
+	font-size: 13px;
+}
+
+/*TOPIC*/
+.topic{
+	width: 100%;
+	display: block;
+	float: left;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding: 1.5em 0;
+}
+.topic .img{
+	width: 120px;
+	float: left;
+}
+.topic .text{
+	width: calc(100% - 150px);
+	padding-left: 20px;
+	float: left;
+}
+.topic .text h3{
+	font-size: 20px;
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+.topic .text .meta{
+	margin-bottom: 10px;
+}
+
+/*HEADING SECTION*/
+.heading-section{
+}
+.heading-section h2{
+	color: #000000;
+	font-size: 28px;
+	margin-top: 0;
+	line-height: 1.4;
+	font-weight: 400;
+}
+.heading-section .subheading{
+	margin-bottom: 20px !important;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,.4);
+	position: relative;
+}
+.heading-section .subheading::after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #ff8b00;
+	margin: 0 auto;
+}
+
+.heading-section-white{
+	color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+	font-family: 'Work Sans', sans-serif; 
+	line-height: 1;
+	padding-bottom: 0;
+}
+.heading-section-white h2{
+	color: #ffffff;
+}
+.heading-section-white .subheading{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.4);
+}
+
+
+ul.social{
+	padding: 0;
+}
+ul.social li{
+	display: inline-block;
+	margin-right: 10px;
+	/*border: 1px solid #ff8b00;*/
+	padding: 10px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.05);
+}
+
+.bg_team{
+	background: #0b656a1a;
+}
+
+/*FOOTER*/
+
+.footer{
+	border-top: 1px solid rgba(0,0,0,.05);
+	color: rgba(0,0,0,.5);
+}
+.footer .heading{
+	color: #fff;
+	font-size: 20px;
+}
+.footer p{
+	color: #fff;
+}
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+.footer ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.footer ul li a{
+	color: rgba(0,0,0,1);
+}
+.about_text{
+	font-size: 13px!important;
+
+}
+.text_footer{
+	color: #fff;
+}
+@media screen and (max-width: 500px) {
+
+}
+
+    </style>
+
+</head>
+
+
+
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #fafafa;">
+	<center style="width: 100%; background-color: #f1f1f1;">
+    <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+    	<!-- BEGIN BODY -->
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td valign="top" class="bg_light2" style="padding: .5em 2.5em 1em 2.5em;">
+          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          		<tr>
+          			<td class="logo" style="text-align: center;">
+			            <h1><a href="https://wa.me/+8801734019022" target="_blank"> Search Engine Optimization</a></h1>
+			          </td>
+          		</tr>
+          	</table>
+          </td>
+	      </tr><!-- end tr -->
+	      <tr>
+          <td valign="middle" class="hero bg_white" style="background-size: cover; height: 400px;">
+          	<div class="overlay"></div>
+            <table>
+            	<tr>
+            		<td>
+            			<div class="text" style="padding: 0 3em; text-align: center;">
+            				<h2 style="font-weight: 600px; font-size: 32px;line-height: 50px;">Want to Grow Your <span style="color: #ff8b00;">Business?</span></h2>
+            				<p style="padding-top: 15px;">For Better user Experience and Keyword Ranking</p>
+            				<p><a href="https://wa.me/+8801734019022" target="_blank" class="btn btn-primary">Contact Now</a></p>
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+	      <tr>
+          <td class="bg_dark email-section" style="text-align:center;">
+          	<div class="heading-section heading-section-white">
+          		<span style="font-size:15px" class="subheading">Why Us</span>
+            	<h2 style="font-size: 25px;">Advanced <span style="color: #ff8b00;">SEO</span> Techniques</h2>
+            	<p style="font-size: 13px; padding: 10px;">SEO is a crucial aspect of online presence and marketing for various reasons; specially in getting Organic Traffic, Long-Term Results, Cost-Effectiveness.</p>
+          	</div>
+          </td>
+        </tr><!-- end: tr -->
+	      <tr>
+          <td class="bg_light email-section">
+          	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+            	<h2 style="color: #061a43; font-weight: 600;">Our Services</h2>
+            	<p>We ensure of digital presence aligns with search engine best practices, driving organic traffic and delivering measurable results.</p>
+          	</div>
+          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          		<tr>
+          			<td valign="top" width="50%" style="padding-top: 20px;" class="services">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="icon">
+                        <img src="https://goverarp.sirv.com/SEO/Technical%20seo2.png" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-services">
+                      	<h3>Technical SEO</h3>
+                       	<p>Technical SEO involves indexing, site speed, mobile-friendliness, URL structure, XML sitemaps, robots.txt, and more.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="50%" style="padding-top: 20px;" class="services">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="icon">
+                        <img src="https://goverarp.sirv.com/SEO/on-page%20seo.png" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-services">
+                      	<h3>On-Page SEO</h3>
+                       	<p>On-page SEO focuses on optimizing specific keywords on titles, URL, meta, images, internal linking, and Good UI.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+          			<td valign="top" width="50%" style="padding-top: 20px;" class="services">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="icon">
+                        <img src="https://goverarp.sirv.com/SEO/off-page%20seo.png" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-services">
+                      	<h3>Off-Page SEO</h3>
+                       	<p>Backlink Building Leads SMM, Influencer Outreach, Guest Posting, Content Promotion, Online Directories & Listings.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="50%" style="padding-top: 20px;" class="services">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="icon">
+                        <img src="https://goverarp.sirv.com/SEO/local%20seo.png" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-services">
+                      	<h3>Local SEO</h3>
+                       	<p>Google My Business (GMB) Optimization, Local Citations, Online Reviews and Ratings, Local Link Building, etc.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+          	</table>
+          </td>
+        </tr><!-- end: tr -->
+        <tr>
+          <td valign="middle" class="counter" style="background: linear-gradient(#071952,#0B666A, #35A29F);; background-size: cover; background-position: center center; padding: 4em 0;">
+          	<div class="overlay"></div>
+            <table>
+            	<tr>
+            		<td valign="middle" width="33.333%">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="counter-text">
+                      	<span class="num">30+</span>
+                      	<span class="name">Clients</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="middle" width="33.333%">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="counter-text">
+                      	<span class="num">10</span>
+                      	<span class="name">Countries</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="middle" width="33.333%">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="counter-text">
+                      	<span class="num">150+</span>
+                      	<span class="name">Projects</span>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+	      <tr>
+          <td class="bg_white email-section">
+          	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+            	<h2 style="font-weight: 600;">Work Steps</h2>
+            	<p>A breakdown of the steps for optimizing your website for better user Experience and SERP Results.</p>
+          	</div>
+          	<table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
+          		<tr>
+		            <td valign="top" style="width: 100%;">
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+		            			<td valign="top" width="100%">
+		            				<div class="topic">
+			            				<div class="img">
+			            				</div>
+			            				<div class="text">
+											<p style="font-size: 12px;">Step-01</p>
+			            					<h3>Getting Required Access</h3>
+			            					<p>Before starting the process, 50% payment is made, and need the required access to start working. For More details, we can have <span> <a href="https://calendly.com/h-rahman" target="_blank">Virtual Meetings.</a> </span> </p>
+			            				</div>
+		            				</div>
+		            				<div class="topic">
+			            				<div class="img">
+			            				</div>
+			            				<div class="text">
+											<p style="font-size: 12px;">Step-02</p>
+			            					<h3>Start with SEO Strategic Plan </h3>
+			            					<p>Step by step complete Technical, On-page, Off-Page SEO and Local SEO activity, and it has a timeframe to deliver the result and tracking report.</p>
+			            				</div>
+		            				</div>
+		            				<div class="topic">
+			            				<div class="img">
+			            				</div>
+			            				<div class="text">
+											<p style="font-size: 12px;">Step-03</p>
+			            					<h3>Analyzing Performance, Tracking, and Reporting</h3>
+			            					<p>Here, Traffic Source, Country, Views by, Event Count, Conversions, Keyword Positions are considered, and Task Details shared periodically.</p>
+			            				</div>
+		            				</div>
+									
+		            			</td>
+                    </tr>
+		            	</table>
+						<p><a style="text-align: center; margin-top: 15px; margin-left: 190px;" href="https://wa.me/+8801734019022" target="_blank" class="btn btn-primary">Quote Now</a></p>
+		            </td>
+		          </tr><!-- end: tr -->
+          	</table>
+          </td>
+        </tr><!-- end: tr -->
+	      <tr>
+          <td class="bg_team email-section">
+          	<div class="heading-section" style="text-align: center; padding: 0 30px;">
+            	<h2 style="font-weight: 600;">Team</h2>
+            	<p>We are Managing, tracking, and analyzing targeted Google Ads for maximum impact on your business toward growth.</p>
+          	</div>
+          	<table role="presentation" border="0"; cellpadding="10"; cellspacing="0"; width="100%">
+          		<tr>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0"; border="0"; width="100%">
+                    <tr>
+                      <td>
+                        <img src="https://goverarp.sirv.com/Web%20Analytics/Habibur0014.png" alt="" style="width: 80px; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block; border-radius: 50%;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-testimony" style="text-align: center;">
+                      	<span class="position">SEO Expert</span>
+                      	<h3 class="name">Habibur Rahman</h3>
+                       	<p class="about_text">SEO Expert to Grow Organic Traffic</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td>
+                        <img src="https://goverarp.sirv.com/Web%20Analytics/kawsar_profile.png" alt="" style="width: 80px; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block; border-radius: 50%;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-testimony" style="text-align: center;">
+                      	<span class="position">Web Designer</span>
+                      	<h3 class="name">Kawsar A Rouf</h3>
+                        <p class="about_text">Fixing Technical Issues and Bugs</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td>
+                        <img src="https://goverarp.sirv.com/Web%20Analytics/Ashiqur.png" alt="" style="width: 80px; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block; border-radius: 50%;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-testimony" style="text-align: center;">
+                      	<span class="position">Web Analytics</span>
+                      	<h3 class="name">Ashiqur Rahman</h3>
+                        <p class="about_text">GTM, GA4, Server Side Conversion Tracking</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+          	</table>
+          </td>
+        </tr><!-- end: tr -->
+
+
+      <!-- 1 Column Text + Button : END -->
+      </table>
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr >
+          <td style="background: linear-gradient(#071952,#0B666A, #35A29F);" valign="middle" class="bg_light footer email-section">
+            <table >
+            	<tr>
+                <td valign="top" width="50%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-right: 10px;">
+                      	<h3 class="heading">About</h3>
+                      	<p class="about_text">We are a team of professionals to help Businesses to grow to optimize and track every activity of visitors to step further.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="50%" style=" padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
+                      	<h3 style="margin-left: 20px;" class="heading">Contact</h3>
+                      	<ul>
+									<li> <a style="color: #fff;margin-left: 20px;" class="text_footer" href="https://wa.me/+8801734019022" target="_blank">WhatsApp</a></li>		
+									<li> <a style="color: #fff; margin-left: 20px;" class="text_footer" href="https://t.me/Habibur0014" target="_blank">Telegram</a></li>
+									<li><a style="margin-left: 22px; color: white;" class="text_footer" href="mailto:habibur014@gmail.com" target="_blank "> Email</a></li>	
+					                
+					    </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr><!-- end: tr -->
+        <tr>
+          <td class="bg_white" style="text-align: center; padding-top: 20px;">
+          	<p>No longer want to receive these email? You can <a href="#" style="color: rgba(0,0,0,.8);">Unsubscribe here</a></p>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+  </center>
+</body>
+</html>
